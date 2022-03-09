@@ -18,12 +18,14 @@ interface ILinkTabProps {
   label?: string;
 }
 function LinkTab(props: ILinkTabProps): ReactElement {
-  return <Tab {...props} component={NextLinkComposed} />;
+  return (
+    <Tab {...props} component={NextLinkComposed} sx={{ minWidth: "12ch" }} />
+  );
 }
 
 const links: ILinkTabProps[] = [
   { label: "Home", to: "/" },
-  { label: "Page", to: "/page" },
+  { label: "Resume", to: "/resume" },
 ];
 
 export default function NavTabs() {

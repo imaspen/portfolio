@@ -9,7 +9,7 @@ const theme: ThemeOptions = {
   components: {
     MuiButton: {
       defaultProps: {
-        variant: "contained",
+        // variant: "contained",
       },
     },
   },

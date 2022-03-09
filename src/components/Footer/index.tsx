@@ -46,7 +46,7 @@ function Footer(): ReactElement {
     >
       <Box
         sx={{
-          maxWidth: "md",
+          maxWidth: "xl",
           margin: "0 auto",
           display: "flex",
           justifyContent: "space-between",
