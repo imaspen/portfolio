@@ -1,45 +1,16 @@
-import { Waves } from "@mui/icons-material";
-import { Avatar, Box, Button, Divider, Typography } from "@mui/material";
+import { Avatar, Box, Divider, Link, Theme, Typography } from "@mui/material";
 import type { NextPage } from "next";
+import NavTabs from "../components/NavTabs";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Box
-        component="header"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            paddingTop: 2,
-          }}
-        >
-          <Divider sx={{ flex: 1, borderColor: "text.primary" }} />
-          <Avatar
-            src="/img/avatar.jpg"
-            sx={{
-              width: 256,
-              height: 256,
-              border: 1,
-              borderColor: "text.primary",
-            }}
-          />
-          <Divider sx={{ flex: 1, borderColor: "text.primary" }} />
-        </Box>
-        <Typography variant="h2" align="center">
-          Hi, I&rsquo;m Aspen
-        </Typography>
-        <Typography variant="h6" align="center">
-          Software Engineer | Gameplay Programmer | Web Developer
-        </Typography>
-      </Box>
+      <Typography component="h1" variant="h2" align="center">
+        Hi, I&rsquo;m Aspen
+      </Typography>
+      <Typography align="center" component="h2" variant="h5">
+        Software Engineer | Games Programmer | Web Developer
+      </Typography>
     </div>
   );
 };

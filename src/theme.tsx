@@ -1,8 +1,11 @@
+import { ThemeOptions } from "@mui/material";
 import { cyan, pink } from "@mui/material/colors";
-import { createTheme } from "@mui/material/styles";
 
-const theme = createTheme({
-  palette: { primary: pink, secondary: cyan },
+const theme: ThemeOptions = {
+  typography: {
+    fontFamily: ["Montserrat", "sans-serif"].join(", "),
+  },
+  palette: { mode: "light", primary: pink, secondary: cyan },
   components: {
     MuiButton: {
       defaultProps: {
@@ -10,6 +13,6 @@ const theme = createTheme({
       },
     },
   },
-});
+};
 
 export default theme;
