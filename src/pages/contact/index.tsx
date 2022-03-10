@@ -6,6 +6,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import Head from "next/head";
 import { ReactElement } from "react";
 import { links } from "../../components/Footer";
 import Link from "../../components/Link";
@@ -28,6 +29,9 @@ function Contact(): ReactElement {
         maxWidth: "sm",
       }}
     >
+      <Head>
+        <title>I&rsquo;m Aspen - Contact</title>
+      </Head>
       <Typography
         component="h1"
         variant={isMediumWidth ? "h2" : "h3"}

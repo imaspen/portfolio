@@ -7,6 +7,7 @@ import {
   useTheme,
 } from "@mui/material";
 import type { NextPage } from "next";
+import Head from "next/head";
 import Link, { NextLinkComposed } from "../components/Link";
 import ProjectCard from "../components/ProjectCard";
 import { FavoriteProjects } from "../models/Project";
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
         gap: 4,
       }}
     >
+      <Head>
+        <title>I&rsquo;m Aspen - Home</title>
+      </Head>
       <Box>
         <Typography
           component="h1"
@@ -123,7 +127,7 @@ const Home: NextPage = () => {
             I&rsquo;m open to roles in both the web development and gaming
             sectors, and have a substantial skillset to bring to both. For more
             information on my technical skills, please refer to{" "}
-            <Link href="/resume">my resume</Link>.
+            <Link href="/cv">my CV</Link>.
           </Typography>
         </Box>
       </Box>

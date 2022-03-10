@@ -1,15 +1,17 @@
-import { Box, Divider, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import type { NextPage } from "next";
-import Image from "next/image";
-import NavTabs from "../../components/NavTabs";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Box marginY={4}>
+      <Head>
+        <title>I&rsquo;m Aspen - CV</title>
+      </Head>
       <Typography component="h1" variant="h2" align="center">
-        Page
+        Under construction
       </Typography>
-    </div>
+    </Box>
   );
 };
 

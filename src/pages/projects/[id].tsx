@@ -1,5 +1,6 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import { ReactElement } from "react";
 import ReactMarkdown from "react-markdown";
@@ -23,6 +24,9 @@ function Project({ project }: IProjectProps): ReactElement {
         gap: 4,
       }}
     >
+      <Head>
+        <title>I&rsquo;m Aspen - Projects - {project.name}</title>
+      </Head>
       <Box
         component="div"
         sx={{

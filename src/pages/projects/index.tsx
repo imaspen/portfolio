@@ -1,4 +1,5 @@
 import { Box, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
+import Head from "next/head";
 import { ReactElement } from "react";
 import ProjectCard from "../../components/ProjectCard";
 import { Projects as ProjectsList } from "../../models/Project";
@@ -17,6 +18,9 @@ function Projects(): ReactElement {
         marginY: 4,
       }}
     >
+      <Head>
+        <title>I&rsquo;m Aspen - Projects</title>
+      </Head>
       <Box>
         <Typography
           component="h1"
