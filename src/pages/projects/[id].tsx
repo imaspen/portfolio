@@ -41,7 +41,7 @@ function Project({ project }: IProjectProps): ReactElement {
             alt={`${project.name} Header`}
             layout="fill"
             objectFit="cover"
-            objectPosition="bottom center"
+            objectPosition={project.headerPosition ?? "center center"}
           />
         </Box>
         <Box
