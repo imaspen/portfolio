@@ -22,6 +22,7 @@ function Contact(): ReactElement {
         alignItems: "stretch",
         gap: 4,
         marginY: 4,
+        paddingX: 4,
         marginX: "auto",
         width: "100%",
         maxWidth: "sm",
