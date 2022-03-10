@@ -23,14 +23,14 @@ const links: IIconLinkProps[] = [
   },
   {
     name: "GitLab",
-    href: "https://github.com/imaspen",
+    href: "https://gitlab.com/imaspen",
     children: <Icon path={mdiGitlab} size={1} />,
   },
-  {
-    name: "Email",
-    href: "mailto:hi@imaspen.dev",
-    children: <Email />,
-  },
+  // {
+  //   name: "Email",
+  //   href: "mailto:hi@imaspen.dev",
+  //   children: <Email />,
+  // },
 ];
 
 function Footer(): ReactElement {

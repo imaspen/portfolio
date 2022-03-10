@@ -2,6 +2,7 @@ import { Avatar, Box, Divider, Theme } from "@mui/material";
 import Image from "next/image";
 import type { ReactElement } from "react";
 import { NextLinkComposed } from "../Link";
+import AvatarImage from "../../../public/img/avatar.jpg";
 
 function Header(): ReactElement {
   return (
@@ -20,10 +21,10 @@ function Header(): ReactElement {
         <Avatar
           imgProps={{ sx: { zIndex: -2 } }}
           sx={{
-            width: "10rem",
-            height: "10rem",
+            width: "20vmin",
+            height: "20vmin",
             border: 2,
-            borderColor: "text.secondary",
+            borderColor: "text.primary",
             backgroundColor: "transparent",
             boxShadow: (theme: Theme) =>
               `0 0 ${theme.spacing(1)} ${theme.palette.grey["900"]} inset`,
@@ -36,7 +37,7 @@ function Header(): ReactElement {
             width="100%"
             height="100%"
           >
-            <Image src="/img/avatar.jpg" alt="Profile Picture" layout="fill" />
+            <Image src={AvatarImage} alt="Profile Picture" layout="fill" />
           </Box>
         </Avatar>
       </NextLinkComposed>

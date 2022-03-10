@@ -25,7 +25,8 @@ function LinkTab(props: ILinkTabProps): ReactElement {
 
 const links: ILinkTabProps[] = [
   { label: "Home", to: "/" },
-  { label: "Resume", to: "/resume" },
+  { label: "Projects", to: "/projects" },
+  // { label: "CV", to: "/cv" },
 ];
 
 export default function NavTabs() {
@@ -40,7 +41,12 @@ export default function NavTabs() {
 
   const router = useRouter();
   useEffect(() => {
-    setValue(links.findIndex(({ to }) => router.pathname === to.toString()));
+    setValue(
+      links.findIndex(
+        ({ to }) =>
+          router.pathname.split("/")[1] === to.toString().split("/")[1]
+      )
+    );
   }, [router.pathname]);
 
   return (

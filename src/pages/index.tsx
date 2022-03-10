@@ -9,6 +9,7 @@ import {
 import type { NextPage } from "next";
 import Link, { NextLinkComposed } from "../components/Link";
 import ProjectCard from "../components/ProjectCard";
+import { FavoriteProjects } from "../models/Project";
 
 const Home: NextPage = () => {
   const theme = useTheme();
@@ -16,24 +17,32 @@ const Home: NextPage = () => {
 
   return (
     <Box
-      sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginY: 4,
+        gap: 4,
+      }}
     >
-      <Typography
-        component="h1"
-        variant={isMediumWidth ? "h2" : "h3"}
-        align="center"
-      >
-        Hi, I&rsquo;m Aspen
-      </Typography>
-      <Typography align="center" component="h2" variant="h5">
-        Software Engineer{isMediumWidth ? " | " : <br />}Games Programmer
-        {isMediumWidth ? " | " : <br />}Web Developer
-      </Typography>
+      <Box>
+        <Typography
+          component="h1"
+          variant={isMediumWidth ? "h2" : "h3"}
+          align="center"
+        >
+          Hi, I&rsquo;m Aspen
+        </Typography>
+        <Typography align="center" component="h2" variant="h5">
+          Software Engineer{isMediumWidth ? " | " : <br />}Games Programmer
+          {isMediumWidth ? " | " : <br />}Web Developer
+        </Typography>
+      </Box>
       <Box
         component="article"
         maxWidth="xl"
         sx={(theme: Theme) => ({
-          margin: 4,
+          marginX: 4,
           gap: 4,
           display: "grid",
           gridTemplateRows: "auto",
@@ -74,10 +83,9 @@ const Home: NextPage = () => {
               },
             })}
           >
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {FavoriteProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </Box>
           <Button
             variant="contained"
@@ -111,7 +119,7 @@ const Home: NextPage = () => {
             University of Huddersfield with a BSc (Hons) in Computer Science
             with Games Programming.
           </Typography>
-          <Typography align="justify" paragraph gutterBottom>
+          <Typography align="justify" paragraph marginBottom={0}>
             I&rsquo;m open to roles in both the web development and gaming
             sectors, and have a substantial skillset to bring to both. For more
             information on my technical skills, please refer to{" "}

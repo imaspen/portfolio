@@ -53,7 +53,7 @@ function MyApp({
         >
           <Header />
           <NavTabs />
-          <Box component="main" sx={{ flexGrow: 1, marginY: 2 }}>
+          <Box component="main" sx={{ flexGrow: 1, alignSelf: "stretch" }}>
             <Component {...pageProps} />
           </Box>
           <Footer />
