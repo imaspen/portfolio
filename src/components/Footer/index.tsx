@@ -5,24 +5,35 @@ import { Box, Link, Typography } from "@mui/material";
 import type { ReactElement, ReactNode } from "react";
 import IconLink, { IIconLinkProps } from "../IconLink";
 
-const links: IIconLinkProps[] = [
+interface ILink {
+  name: string;
+  label: string;
+  href: string;
+  children: ReactNode;
+}
+
+export const links: ILink[] = [
   {
     name: "Twitter",
+    label: "@im_aspen",
     href: "https://twitter.com/im_aspen",
     children: <Twitter />,
   },
   {
     name: "LinkedIn",
+    label: "Aspen Thompson",
     href: "https://www.linkedin.com/in/aspen-thompson/",
     children: <LinkedIn />,
   },
   {
     name: "GitHub",
+    label: "imaspen",
     href: "https://github.com/imaspen",
     children: <GitHub />,
   },
   {
     name: "GitLab",
+    label: "imaspen",
     href: "https://gitlab.com/imaspen",
     children: <Icon path={mdiGitlab} size={1} />,
   },
@@ -55,7 +66,9 @@ function Footer(): ReactElement {
       >
         <Box sx={{ display: "flex", gap: 1 }}>
           {links.map((props) => (
-            <IconLink key={props.name} {...props} />
+            <IconLink key={props.name} name={props.name} href={props.href}>
+              {props.children}
+            </IconLink>
           ))}
         </Box>
         <Typography variant="button">&copy; Aspen Thompson, 2022</Typography>
