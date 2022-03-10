@@ -80,9 +80,7 @@ function Project({ project }: IProjectProps): ReactElement {
                     {...props}
                   />
                 ),
-                p: ({ node, ...props }) => (
-                  <Typography paragraph align="justify" {...props} />
-                ),
+                p: ({ node, ...props }) => <Typography paragraph {...props} />,
               }}
             >
               {project.longDescription}

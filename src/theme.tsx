@@ -7,9 +7,11 @@ const theme: ThemeOptions = {
   },
   palette: { mode: "light", primary: pink, secondary: cyan },
   components: {
-    MuiButton: {
-      defaultProps: {
-        // variant: "contained",
+    MuiTypography: {
+      styleOverrides: {
+        paragraph: {
+          hyphens: "auto",
+        },
       },
     },
   },

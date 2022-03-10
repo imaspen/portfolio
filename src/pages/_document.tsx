@@ -5,7 +5,7 @@ import createEmotionServer from "@emotion/server/create-instance";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="description" content="Portfolio Site" />
           <link rel="icon" href="/favicon.ico" />

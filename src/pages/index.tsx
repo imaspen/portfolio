@@ -100,18 +100,18 @@ const Home: NextPage = () => {
           <Typography component="h3" variant="h6">
             About Me
           </Typography>
-          <Typography align="justify" paragraph gutterBottom>
+          <Typography paragraph gutterBottom>
             Thanks for dropping by! I&rsquo;m a highly versatile developer
             currently based out of West Yorkshire, but with a willingness to
             relocate for the right role.
           </Typography>
-          <Typography align="justify" paragraph gutterBottom>
+          <Typography paragraph gutterBottom>
             Although I am profficient in a multitude of languages, from the
             likes of TypeScript through to C++ (full list here), the specific
             language has never been my main concern. I&rsquo;m much more
             interested in the type of project.
           </Typography>
-          <Typography align="justify" paragraph gutterBottom>
+          <Typography paragraph gutterBottom>
             Whilst web development has been my primary interest for much of my
             development history, like many developers my age, I actually got
             started using Java to create Minecraft mods. Since then I have kept
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
             University of Huddersfield with a BSc (Hons) in Computer Science
             with Games Programming.
           </Typography>
-          <Typography align="justify" paragraph marginBottom={0}>
+          <Typography paragraph marginBottom={0}>
             I&rsquo;m open to roles in both the web development and gaming
             sectors, and have a substantial skillset to bring to both. For more
             information on my technical skills, please refer to{" "}
