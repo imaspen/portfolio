@@ -1,3 +1,4 @@
+import { Theme } from "@mui/material";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
@@ -59,7 +60,7 @@ export default function NavTabs() {
         borderBottom: 1,
         borderBottomColor: "divider",
         backgroundColor: "background.default",
-        zIndex: 2000,
+        zIndex: "appBar",
       }}
     >
       <Tabs
