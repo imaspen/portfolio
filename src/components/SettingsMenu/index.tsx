@@ -21,14 +21,20 @@ import {
   ListItemText,
   Menu,
   MenuItem,
+  Theme,
   ToggleButton,
   ToggleButtonGroup,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { ReactElement, useCallback, useContext, useState } from "react";
 import ThemeContext, { DisplayMode } from "../../contexts/ThemeContext";
 
 function SettingsMenu(): ReactElement {
+  const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+
   const themeContext = useContext(ThemeContext);
 
   const [open, setOpen] = useState<boolean>(false);
@@ -53,8 +59,15 @@ function SettingsMenu(): ReactElement {
       <IconButton onClick={toggleOpen}>
         <Settings id="settings-button" />
       </IconButton>
-      <Drawer anchor="right" open={open} onClose={handleClose}>
-        <Box sx={{ width: "50ch", maxWidth: "100%" }}>
+      <Drawer
+        anchor="right"
+        open={open}
+        onClose={handleClose}
+        PaperProps={{
+          sx: { maxWidth: "100%", width: theme.breakpoints.values["sm"] },
+        }}
+      >
+        <Box>
           <Box
             padding={2}
             display="flex"
@@ -84,6 +97,7 @@ function SettingsMenu(): ReactElement {
               color="primary"
               value={themeContext.displayMode}
               onChange={handleChangeDisplayMode}
+              orientation={isSmall ? "vertical" : "horizontal"}
             >
               <ToggleButton value="Light" aria-label="light mode">
                 <LightMode fontSize="small" sx={{ marginRight: 1 }} /> Light
@@ -104,7 +118,12 @@ function SettingsMenu(): ReactElement {
             >
               Font Size
             </Typography>
-            <ButtonGroup fullWidth aria-label="font size" variant="contained">
+            <ButtonGroup
+              fullWidth
+              aria-label="font size"
+              variant="contained"
+              orientation={isSmall ? "vertical" : "horizontal"}
+            >
               <Button
                 aria-label="decrease text size"
                 onClick={themeContext.decreaseFontSize}

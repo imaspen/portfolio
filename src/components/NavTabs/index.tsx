@@ -59,6 +59,7 @@ export default function NavTabs() {
         borderBottom: 1,
         borderBottomColor: "divider",
         backgroundColor: "background.default",
+        zIndex: 2000,
       }}
     >
       <Tabs

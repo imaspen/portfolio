@@ -44,10 +44,10 @@ function Projects(): ReactElement {
           gridTemplateRows: "auto",
           gridTemplateColumns: "1fr 1fr 1fr",
           gridTemplateAreas: '"main aside"',
-          [theme.breakpoints.down("lg")]: {
+          [theme.breakpoints.down("md")]: {
             gridTemplateColumns: "1fr 1fr",
           },
-          [theme.breakpoints.down("md")]: {
+          [theme.breakpoints.down("sm")]: {
             gridTemplateColumns: "1fr",
             gridTemplateAreas: '"main" "aside"',
           },
