@@ -6,7 +6,6 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import NavTabs from "../components/NavTabs";
-import SettingsMenu from "../components/SettingsMenu";
 import { ThemeContextProvider } from "../contexts/ThemeContext";
 import createEmotionCache from "../utilities/createEmotionCache";
 
@@ -28,7 +27,6 @@ function MyApp({
       </Head>
       <ThemeContextProvider>
         <CssBaseline />
-        <SettingsMenu />
         <Box
           sx={{
             display: "flex",
@@ -38,7 +36,6 @@ function MyApp({
           }}
         >
           <Header />
-          <NavTabs />
           <Box component="main" sx={{ flexGrow: 1, alignSelf: "stretch" }}>
             <Component {...pageProps} />
           </Box>

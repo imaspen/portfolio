@@ -15,13 +15,7 @@ import {
   Divider,
   Drawer,
   IconButton,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Menu,
-  MenuItem,
-  Theme,
+  SwipeableDrawer,
   ToggleButton,
   ToggleButtonGroup,
   Typography,
@@ -55,14 +49,15 @@ function SettingsMenu(): ReactElement {
   );
 
   return (
-    <Box sx={{ position: "absolute", top: 0, right: 0, margin: 1 }}>
+    <>
       <IconButton onClick={toggleOpen}>
         <Settings id="settings-button" />
       </IconButton>
-      <Drawer
+      <SwipeableDrawer
         anchor="right"
         open={open}
         onClose={handleClose}
+        onOpen={() => setOpen(true)}
         PaperProps={{
           sx: { maxWidth: "100%", width: theme.breakpoints.values["sm"] },
         }}
@@ -147,8 +142,8 @@ function SettingsMenu(): ReactElement {
             </ButtonGroup>
           </Box>
         </Box>
-      </Drawer>
-    </Box>
+      </SwipeableDrawer>
+    </>
   );
 }
 
