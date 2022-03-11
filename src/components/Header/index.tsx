@@ -28,7 +28,6 @@ function Header(): ReactElement {
         sx={{
           alignItems: "center",
           justifyContent: "center",
-          paddingTop: 2,
           width: "100%",
           display: "grid",
           gridTemplateRows: "1fr auto 1fr",
@@ -56,7 +55,7 @@ function Header(): ReactElement {
             zIndex: -2,
           }}
         />
-        <Box sx={{ gridRow: "1 / 4", gridColumn: 2 }}>
+        <Box sx={{ gridRow: "1 / 4", gridColumn: 2, padding: 2 }}>
           <NextLinkComposed to="/">
             <Avatar
               sx={{
