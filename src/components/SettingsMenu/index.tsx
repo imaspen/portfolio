@@ -75,7 +75,7 @@ function SettingsMenu(): ReactElement {
             alignItems="center"
           >
             <Typography>Settings</Typography>
-            <IconButton>
+            <IconButton onClick={handleClose}>
               <Close fontSize="small" />
             </IconButton>
           </Box>
