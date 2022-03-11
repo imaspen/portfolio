@@ -44,7 +44,7 @@ const darkTheme: ThemeOptions = {
     background: {
       ...baseTheme.palette?.background,
       paper: darken(teal[900], 0.8),
-      default: darken(teal[900], 0.85),
+      default: darken(teal[900], 0.8),
     },
   },
 };
