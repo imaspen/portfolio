@@ -1,8 +1,8 @@
 import { Avatar, Box, Divider, Theme } from "@mui/material";
 import Image from "next/image";
 import type { ReactElement } from "react";
-import { NextLinkComposed } from "../Link";
 import AvatarImage from "../../../public/img/avatar.jpg";
+import { NextLinkComposed } from "../Link";
 
 function Header(): ReactElement {
   return (

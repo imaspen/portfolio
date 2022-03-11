@@ -1,17 +1,16 @@
-import Link, { NextLinkComposed } from "../Link";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
+import { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 import {
-  MouseEvent as ReactMouseEvent,
   ReactElement,
   SyntheticEvent,
   useCallback,
   useEffect,
   useState,
 } from "react";
-import { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import { NextLinkComposed } from "../Link";
 
 interface ILinkTabProps {
   to: LinkProps["href"];
