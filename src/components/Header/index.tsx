@@ -75,12 +75,7 @@ function Header(): ReactElement {
                 height="100%"
                 zIndex={-1}
               >
-                <Image
-                  src={AvatarImage}
-                  alt="Profile Picture"
-                  layout="fill"
-                  priority
-                />
+                <Image src={AvatarImage} alt="Profile Picture" layout="fill" />
               </Box>
             </Avatar>
           </NextLinkComposed>

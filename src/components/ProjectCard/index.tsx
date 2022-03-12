@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Card,
+  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
@@ -19,17 +20,24 @@ export interface IProjectCardProps {
 function ProjectCard({ project }: IProjectCardProps): ReactElement {
   return (
     <Card>
-      <CardMedia sx={{ height: "10rem" }} title="Project Image">
-        <Box position="relative" height="100%" width="100%">
-          <Image
-            src={project.headerImage}
-            alt={`${project.name} Header`}
-            layout="fill"
-            objectFit="cover"
-            objectPosition={project.headerPosition ?? "center center"}
-          />
-        </Box>
-      </CardMedia>
+      <CardActionArea
+        LinkComponent={(props) => (
+          <NextLinkComposed to={props.href} {...props} />
+        )}
+        href={`/projects/${project.id}`}
+      >
+        <CardMedia sx={{ height: "10rem" }} title="Project Image">
+          <Box position="relative" height="100%" width="100%">
+            <Image
+              src={project.headerImage}
+              alt={`${project.name} Header`}
+              layout="fill"
+              objectFit="cover"
+              objectPosition={project.headerPosition ?? "center center"}
+            />
+          </Box>
+        </CardMedia>
+      </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="h6" component="h4">
           {project.name}

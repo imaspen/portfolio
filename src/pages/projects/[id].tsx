@@ -1,9 +1,17 @@
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  alpha,
+  Box,
+  Theme,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { ReactElement } from "react";
 import ReactMarkdown from "react-markdown";
+import Carousel from "../../components/Carousel";
 import Project, { Projects } from "../../models/Project";
 
 interface IProjectProps {
@@ -22,6 +30,14 @@ function Project({ project }: IProjectProps): ReactElement {
         flexDirection: "column",
         alignItems: "center",
         gap: 4,
+        marginBottom: 4,
+        [theme.breakpoints.down("md")]: {
+          marginTop: `min(calc(-10vmin - ${theme.spacing(
+            2
+          )}), calc(${theme.spacing(-4)} - ${
+            24 * (theme.typography.fontSize / 14)
+          }px))`,
+        },
       }}
     >
       <Head>
@@ -35,11 +51,23 @@ function Project({ project }: IProjectProps): ReactElement {
           position: "relative",
           display: "grid",
           gridTemplate: "1fr / 1fr",
-          background:
-            "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
+          background: (theme: Theme) =>
+            `linear-gradient(to top, ${alpha(
+              theme.palette.background.default,
+              1
+            )}, ${alpha(theme.palette.background.default, 0)})`,
         }}
       >
-        <Box zIndex={-1}>
+        <Box
+          sx={{
+            zIndex: -1,
+            position: "relative",
+            height: "100%",
+            width: "100%",
+            gridRow: 1,
+            gridColumn: 1,
+          }}
+        >
           <Image
             src={project.headerImage}
             alt={`${project.name} Header`}
@@ -49,10 +77,14 @@ function Project({ project }: IProjectProps): ReactElement {
           />
         </Box>
         <Box
-          marginBottom={2}
-          marginTop={4}
-          alignSelf="end"
-          justifySelf="center"
+          sx={{
+            marginBottom: 2,
+            marginTop: 24,
+            alignSelf: "end",
+            justifySelf: "center",
+            gridRow: 1,
+            gridColumn: 1,
+          }}
         >
           <Typography
             component="h1"
@@ -73,7 +105,7 @@ function Project({ project }: IProjectProps): ReactElement {
       </Box>
       {typeof project.longDescription === "string" &&
         project.longDescription.length > 0 && (
-          <Box maxWidth="md" width="100%" marginX={4} marginBottom={4}>
+          <Box maxWidth="md" width="100%" paddingX={4}>
             <ReactMarkdown
               components={{
                 h1: ({ node, ...props }) => (
@@ -91,6 +123,9 @@ function Project({ project }: IProjectProps): ReactElement {
             </ReactMarkdown>
           </Box>
         )}
+      <Box maxWidth="md" width="100%" paddingX={4}>
+        <Carousel entries={project.carouselEntries} />
+      </Box>
     </Box>
   );
 }
