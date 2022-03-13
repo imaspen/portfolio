@@ -43,7 +43,7 @@ function LinkTab(props: ILinkTabProps): ReactElement {
 const links: ILinkTabProps[] = [
   { label: "Home", to: "/" },
   { label: "Projects", to: "/projects" },
-  // { label: "CV", to: "/cv" },
+  { label: "CV", to: "/cv" },
   { label: "Contact", to: "/contact" },
 ];
 

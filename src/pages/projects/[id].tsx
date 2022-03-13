@@ -97,7 +97,7 @@ function Project({ project }: IProjectProps): ReactElement {
             variant="subtitle1"
             align="center"
             whiteSpace="pre-line"
-            marginX={4}
+            marginX={2}
           >
             {project.shortDescription}
           </Typography>
@@ -105,7 +105,7 @@ function Project({ project }: IProjectProps): ReactElement {
       </Box>
       {typeof project.longDescription === "string" &&
         project.longDescription.length > 0 && (
-          <Box maxWidth="md" width="100%" paddingX={4}>
+          <Box maxWidth="md" width="100%" paddingX={2}>
             <ReactMarkdown
               components={{
                 h1: ({ node, ...props }) => (
@@ -123,7 +123,7 @@ function Project({ project }: IProjectProps): ReactElement {
             </ReactMarkdown>
           </Box>
         )}
-      <Box maxWidth="md" width="100%" paddingX={4}>
+      <Box maxWidth="md" width="100%" paddingX={2}>
         <Carousel entries={project.carouselEntries} />
       </Box>
     </Box>

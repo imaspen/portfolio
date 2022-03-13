@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         component="article"
         maxWidth="xl"
         sx={(theme: Theme) => ({
-          marginX: 4,
+          marginX: 2,
           gap: 4,
           display: "grid",
           gridTemplateRows: "auto",
@@ -111,9 +111,10 @@ const Home: NextPage = () => {
           </Typography>
           <Typography paragraph gutterBottom>
             Although I am profficient in a multitude of languages, from the
-            likes of TypeScript through to C++ (full list here), the specific
-            language has never been my main concern. I&rsquo;m much more
-            interested in the type of project.
+            likes of TypeScript through to C++ (full list available in{" "}
+            <Link href="/cv">my CV</Link>), the specific language has never been
+            my main concern. I&rsquo;m much more interested in the type of
+            project.
           </Typography>
           <Typography paragraph gutterBottom>
             Whilst web development has been my primary interest for much of my
@@ -123,11 +124,17 @@ const Home: NextPage = () => {
             University of Huddersfield with a BSc (Hons) in Computer Science
             with Games Programming.
           </Typography>
-          <Typography paragraph marginBottom={0}>
+          <Typography paragraph gutterBottom>
             I&rsquo;m open to roles in both the web development and gaming
             sectors, and have a substantial skillset to bring to both. For more
             information on my technical skills, please refer to{" "}
             <Link href="/cv">my CV</Link>.
+          </Typography>
+          <Typography paragraph marginBottom={0}>
+            In my free time, I am a passionate sports fan and life long Wolves
+            supporter, and I play as a goalie for our local hockey team. I can
+            often be found playing video games, some of my favorites including
+            Overwatch, Football Manager, and racing simulators.
           </Typography>
         </Box>
       </Box>

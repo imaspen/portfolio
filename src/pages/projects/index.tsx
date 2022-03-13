@@ -36,7 +36,7 @@ function Projects(): ReactElement {
       <Box
         component="article"
         sx={(theme: Theme) => ({
-          paddingX: 4,
+          paddingX: 2,
           gap: 4,
           maxWidth: "xl",
           width: "100%",
