@@ -1,6 +1,7 @@
 import {
   alpha,
   Box,
+  Button,
   Theme,
   Typography,
   useMediaQuery,
@@ -13,6 +14,7 @@ import { ReactElement } from "react";
 import ReactMarkdown from "react-markdown";
 import Carousel from "../../components/Carousel";
 import Project, { Projects } from "../../models/Project";
+import stringToIcon from "../../utilities/stringToIcon";
 
 interface IProjectProps {
   project: Project;
@@ -103,6 +105,34 @@ function Project({ project }: IProjectProps): ReactElement {
           </Typography>
         </Box>
       </Box>
+      {project.projectLinks instanceof Array &&
+        project.projectLinks.length > 0 && (
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              paddingX: 2,
+              gap: 2,
+            }}
+          >
+            {project.projectLinks.map((link) => (
+              <Button
+                variant="contained"
+                key={link.label}
+                startIcon={(() => {
+                  let Icon = stringToIcon(link.icon);
+                  return <Icon />;
+                })()}
+                href={link.href}
+                download={link.download}
+                target={link.download ? "_self" : "_blank"}
+              >
+                {link.label}
+              </Button>
+            ))}
+          </Box>
+        )}
       {typeof project.longDescription === "string" &&
         project.longDescription.length > 0 && (
           <Box maxWidth="md" width="100%" paddingX={2}>

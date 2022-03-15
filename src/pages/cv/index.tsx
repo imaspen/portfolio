@@ -161,7 +161,7 @@ const Home: NextPage = () => {
         </Typography>
         <Divider sx={{ marginY: 2 }} />
         <Typography component="h2" variant="h5" align="center" gutterBottom>
-          Activities
+          Extra Curriculars
         </Typography>
         <Typography component="h3" variant="h6">
           Community Involvement
@@ -171,34 +171,21 @@ const Home: NextPage = () => {
           life and teaching on campus for disabled and LGBT+ students. Attend
           meetings between student union staff, university staff, and students
           to help provide a student perspective on necessary changes to create
-          an inclusive campus.
+          an inclusive campus. As part of the LGBT+ Student Network in 2019, I
+          was selected to attend the NUS LGBT+ Conference, where we debated and
+          voted on policy changes and set the agenda of the NUS on LGBT+ issues
+          for the year to come.
         </Typography>
-        <Typography paragraph>
-          As part of the LGBT+ Student Network in 2019, I was selected to attend
-          the NUS LGBT+ Conference, where we debated and voted on policy changes
-          and set the agenda of the NUS on LGBT+ issues for the year to come.
-        </Typography>
-
         <Typography component="h3" variant="h6">
-          LGBTQ+ Committee, Social Media Secretary (18/19), Trans and Non-binary
-          Welfare Officer (19/20)
-        </Typography>
-        <Typography paragraph>
-          Ran the community social media, worked with the rest of the committee
-          to ensure that updates were provided regularly.
+          LGBTQ+ Committee Trans and Non-binary Welfare Officer
         </Typography>
         <Typography paragraph>
           Be a point of contact for students struggling with issues around the
           university caused by identifying as trans or non-binary. Liaise with
           the university and external organizations for additional support and
-          facilitation of student needs.
+          facilitation of student needs. Lead on campus activities and help to
+          organize external events.
         </Typography>
-        <Typography paragraph>
-          Lead on campus support groups for trans and non-binary students, and
-          facilitate the wider LGBTQ+ society activities in collaboration with
-          the president and the male and female welfare officers.
-        </Typography>
-
         <Typography component="h3" variant="h6">
           Hudd Drama Vice President
         </Typography>
@@ -206,28 +193,27 @@ const Home: NextPage = () => {
           Facilitate the running of the society for the president by organising
           events, liaising with other committee members to get progress updates
           on projects, and with the student body for information on the wishes
-          of our members.
+          of our members. Assist in running sessions and activities, leading
+          groups of between five and twenty students in one off exercises as
+          well as longer projects.
         </Typography>
-        <Typography paragraph>
-          Furthermore, run some sessions and activities, leading groups of
-          between five and twenty students in one off exercises as well as
-          longer projects.
-        </Typography>
-
         <Typography component="h3" variant="h6">
           Mixed Sports Society Founder and President
         </Typography>
         <Typography paragraph>
-          Created a space for students who feel uncomfortable with or unable to
-          participate in regular university sports clubs to participate in
-          casual sport.
-        </Typography>
-        <Typography paragraph>
-          My responsibilities include managing the budget, locating and booking
+          Responsibilities include managing the budget, locating and booking
           spaces on a weekly basis, sourcing equipment for activities, and
           engaging with society members to ensure the sports played are
           appropriate and any necessary adjustments are made for those with
           additional needs.
+        </Typography>
+        <Typography component="h3" variant="h6">
+          Student Representative
+        </Typography>
+        <Typography paragraph>
+          Meet with and gain understanding of the issues and needs of students
+          on my course, and relay them to faculty through one on one meetings,
+          course committee meetings, and student panel.
         </Typography>
       </Box>
     </Box>

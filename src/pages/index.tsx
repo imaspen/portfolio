@@ -67,7 +67,6 @@ const Home: NextPage = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            gap: 2,
           }}
         >
           <Typography component="h3" variant="h6" gutterBottom>
@@ -95,13 +94,13 @@ const Home: NextPage = () => {
             variant="contained"
             component={NextLinkComposed}
             to="/projects"
-            sx={{ alignSelf: "center" }}
+            sx={{ alignSelf: "center", marginTop: 2 }}
           >
             See More
           </Button>
         </Box>
         <Box component="aside" gridArea="aside">
-          <Typography component="h3" variant="h6">
+          <Typography component="h3" variant="h6" gutterBottom>
             About Me
           </Typography>
           <Typography paragraph gutterBottom>

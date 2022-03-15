@@ -1,9 +1,8 @@
 import { mdiGitlab } from "@mdi/js";
-import Icon from "@mdi/react";
-import { Email, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
-import { Box, Link, Typography } from "@mui/material";
+import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { Box, Typography, SvgIcon } from "@mui/material";
 import type { ReactElement, ReactNode } from "react";
-import IconLink, { IIconLinkProps } from "../IconLink";
+import IconLink from "../IconLink";
 
 interface ILink {
   name: string;
@@ -35,13 +34,12 @@ export const links: ILink[] = [
     name: "GitLab",
     label: "imaspen",
     href: "https://gitlab.com/imaspen",
-    children: <Icon path={mdiGitlab} size={1} />,
+    children: (
+      <SvgIcon>
+        <path d={mdiGitlab} />
+      </SvgIcon>
+    ),
   },
-  // {
-  //   name: "Email",
-  //   href: "mailto:hi@imaspen.dev",
-  //   children: <Email />,
-  // },
 ];
 
 function Footer(): ReactElement {
