@@ -7,6 +7,7 @@ import LethalDeal from "./LethalDeal";
 import Cuckoo from "./Cuckoo";
 import { ReactNode } from "react";
 import { GitHub } from "@mui/icons-material";
+import GentlemansJourney from "./GentlemansJourney";
 
 export interface IProjectLink {
   href: string;
@@ -33,8 +34,8 @@ export const Projects: IProject[] = [
     name: "Portfolio",
     headerImage: PortfolioImage,
     headerPosition: "top center",
-    shortDescription: "The site you’re on right now! A modern web app.",
-    longDescription: "Built using Next.JS and MUI in TypeScript.",
+    shortDescription:
+      "The site you’re on right now! A modern web app.\nBuilt using Next.JS and MUI in TypeScript.",
     carouselEntries: [],
     projectLinks: [
       {
@@ -56,6 +57,7 @@ export const Projects: IProject[] = [
     carouselEntries: [],
   },
   Cuckoo,
+  GentlemansJourney,
   {
     id: "aoc",
     name: "Advent of Code",

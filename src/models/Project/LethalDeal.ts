@@ -14,6 +14,8 @@ This game is still in early development and is lacking polish in a number of are
 
 Keyboard and mouse required.
 
+Source code withheld due to the game being actively developed for a university project, but will be available following completion of the year.
+
 ## Controls
 WASD: Move
 
@@ -48,7 +50,7 @@ const carouselEntries: ICarouselEntry[] = [
 
 const projectLinks: IProjectLink[] = [
   {
-    href: "",
+    href: "https://1drv.ms/u/s!AsgZwZEOGn4PgtRKIcxVW40EvN537w?e=tLu3sz",
     label: "Download Demo",
     icon: "videogame_asset",
   },

@@ -13,8 +13,8 @@ import Image from "next/image";
 import { ReactElement } from "react";
 import ReactMarkdown from "react-markdown";
 import Carousel from "../../components/Carousel";
+import StringIcon from "../../components/StringIcon";
 import Project, { Projects } from "../../models/Project";
-import stringToIcon from "../../utilities/stringToIcon";
 
 interface IProjectProps {
   project: Project;
@@ -120,10 +120,7 @@ function Project({ project }: IProjectProps): ReactElement {
               <Button
                 variant="contained"
                 key={link.label}
-                startIcon={(() => {
-                  let Icon = stringToIcon(link.icon);
-                  return <Icon />;
-                })()}
+                startIcon={<StringIcon iconName={link.icon} />}
                 href={link.href}
                 download={link.download}
                 target={link.download ? "_self" : "_blank"}
@@ -142,6 +139,14 @@ function Project({ project }: IProjectProps): ReactElement {
                   <Typography
                     component="h2"
                     variant="h5"
+                    gutterBottom
+                    {...props}
+                  />
+                ),
+                h2: ({ node, ...props }) => (
+                  <Typography
+                    component="h3"
+                    variant="h6"
                     gutterBottom
                     {...props}
                   />

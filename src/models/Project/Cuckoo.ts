@@ -4,7 +4,7 @@ import { ICarouselEntry } from "../../components/Carousel";
 import { IProjectLink } from "./index";
 
 const shortDescription =
-  "The third of three game jams from my second year.\nA local multiplayer party game written in UE4 with C++.";
+  "Another 4 day game jam from my second year.\nA local multiplayer party game written in UE4 with C++.";
 
 const longDescription = `
 # My Role
@@ -31,6 +31,11 @@ const carouselEntries: ICarouselEntry[] = [
 ];
 
 const projectLinks: IProjectLink[] = [
+  {
+    href: "https://gitlab.com/imaspen/cuckoo",
+    label: "Source Code",
+    icon: "gitlab",
+  },
   {
     href: "https://1drv.ms/u/s!AsgZwZEOGn4PgtQ7XIzYZtVbsHiGAw?e=6RsOIg",
     label: "Download Demo",
