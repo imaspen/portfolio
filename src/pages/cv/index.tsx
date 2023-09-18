@@ -49,92 +49,53 @@ const Home: NextPage = () => {
           About Me
         </Typography>
         <Typography paragraph>
-          Software engineer on course for a 1st class degree with specific
-          interests in games programming with Unreal Engine and full stack web
-          development, particularly using JavaScript, Node.js and React.
+          Software engineer specialising in web and mobile app development, with
+          experience working remotely using Agile principles at both startup and
+          enterprise level, where I have been progressing quickly.
         </Typography>
         <Typography paragraph>
-          I started programming 10 years ago with Visual Basic, before quickly
-          moving on to Java and web programming. Since then, I have focused most
-          of my efforts on the web and and games programming. I have also taken
-          part in game jams, usually utilizing Unity LibGDX, obtaining first
-          place at the Huddersfield Santander &amp; Enterprise Game Jam and the
-          Computer Science with Games Programming Student of the Year award.
-        </Typography>
-        <Typography paragraph>
-          I have gained great experience on my placement year with Beaconsoft,
-          as well as my previous experience in industry with SNT, whilst my
-          final year at the University of Huddersfield has seen me take on new
-          challenges, including expanding my game engine from second year to
-          include OpenCV support, creating a LIDAR 3D modelling tool that
-          utilizes the iPhone for my dissertation, and creating of a game
-          vertical slice for group project.
+          A high achiever during University, I obtained multiple awards,
+          including first place at the Huddersfield Santander &amp; Enterprise
+          Game Jam, two second place awards and one first place award at the
+          Game Republic Student Showcase 2022, and the course Student of the
+          Year award.
         </Typography>
         <Divider sx={{ marginY: 2 }} />
         <Typography component="h2" variant="h5" align="center" gutterBottom>
           Previous Work
         </Typography>
         <Typography component="h3" variant="h6">
-          Web Developer, Beaconsoft Ltd, July 2020 - Present
-        </Typography>
-        <Typography paragraph>
-          Originally started as a University placement, my contract was extended
-          after the duration of the initial placement to allow me to continue to
-          work with the Beacon team part time through my final year.
-        </Typography>
-        <Typography paragraph>
-          Worked throughout the stack, taking on responsibilities ranging from
-          AWS configuration, MySQL database design and deployment, API
-          development using PHP, and frontend development in React. I have been
-          able to take part in a number of exciting projects and lead the
-          development of Overlord, our in house admin console. Helped develop
-          our app as part of a team of an agile team of just five into an award
-          winning service.
+          Full Stack Developer, Post Office Ltd, 2022 - Present
         </Typography>
         <Typography component="h3" variant="h6">
-          Part Time Poker Dealer, Grosvenor Casino, October 2018 - July 2021
-        </Typography>
-        <Typography paragraph>
-          Work as part of a close-knit team in a customer facing role requiring
-          quick thinking and long periods of focus. Be responsible for the money
-          on the poker tables during the game and ensure players keep within the
-          rules.
+          Web Developer, Beaconsoft Ltd, 2020 - 2022
         </Typography>
         <Typography component="h3" variant="h6">
-          Apprentice Full Stack Web Developer, SNT Group, October 2015 - April
-          2016
-        </Typography>
-        <Typography paragraph>
-          Responsibilities included liaising with managers and clients to ensure
-          designs and implementation were within specification. Working to tight
-          time schedules to meet deadlines. Configuring Ubuntu servers for
-          projects, usually using a LAMP stack but also using Node.js.
+          Apprentice Full Stack Web Developer, SNT Group, 2015 - 2016
         </Typography>
         <Divider sx={{ marginY: 2 }} />
         <Typography component="h2" variant="h5" align="center" gutterBottom>
           Education
         </Typography>
         <Typography component="h3" variant="h6">
-          University of Huddersfield, 2018-Present
+          University of Huddersfield, 2018 - 2022
         </Typography>
         <Typography>
-          Studying Computer Science with Games Programming, BSc (Hons)
+          Studying Computer Science with Games Programming, BSc (Hons), 1st
+          Class
         </Typography>
         <Typography marginBottom={2}>
-          Course Best Student Award Winner 2018/19
+          Course Best Student Award, Winner
         </Typography>
         <Typography component="h3" variant="h6">
-          The Open University, 2017-2018
+          The Open University, 2017 - 2018
         </Typography>
-        <Typography>Computing and IT, CertHE</Typography>
-        <Typography marginBottom={2}>91% Overall</Typography>
+        <Typography marginBottom={2}>Computing and IT, CertHE</Typography>
         <Typography component="h3" variant="h6">
-          Heckmondwike Grammar School, 2009-2014
+          Heckmondwike Grammar School, 2009 - 2014
         </Typography>
         <Typography>13 GCSEs at A* to C</Typography>
-        <Typography>
-          Including A* Mathematics, A ICT, A English Language
-        </Typography>
+        <Typography>A* Mathematics, A English Language</Typography>
         <Divider sx={{ marginY: 2 }} />
         <Typography component="h2" variant="h5" align="center" gutterBottom>
           Technical Skills
@@ -143,77 +104,25 @@ const Home: NextPage = () => {
           Main Languages
         </Typography>
         <Typography marginBottom={2}>
-          JavaScript, TypeScript, C++, C, C\#, Swift, Java, Python, PHP, HTML5,
-          CSS3, SQL
+          JavaScript, TypeScript, Swift, Java, C, C++, C#, Go, Python, PHP,
+          HTML, CSS, SQL
         </Typography>
         <Typography component="h3" variant="h6">
           Frameworks
         </Typography>
         <Typography marginBottom={2}>
-          Unreal Engine, Unity, SwiftUI, React, Next.JS, Redux, JUnit, MySQL,
-          GraphQL
+          React, React Native, Next.JS, Jest, Redux, SwiftUI, MySQL, GraphQL,
+          JUnit
         </Typography>
         <Typography component="h3" variant="h6">
           Tools
         </Typography>
+        <Typography>Git, Jira, Bash, Zsh, WSL</Typography>
+        <Typography component="h3" variant="h6">
+          Concepts
+        </Typography>
         <Typography marginBottom={2}>
-          Git, Windows, MacOS, Ubuntu, CentOS, AWS, WSL, Bash/Zsh, Vim, LaTeX
-        </Typography>
-        <Divider sx={{ marginY: 2 }} />
-        <Typography component="h2" variant="h5" align="center" gutterBottom>
-          Extra Curriculars
-        </Typography>
-        <Typography component="h3" variant="h6">
-          Community Involvement
-        </Typography>
-        <Typography paragraph>
-          Campaign for positive change on campus to help increase the quality of
-          life and teaching on campus for disabled and LGBT+ students. Attend
-          meetings between student union staff, university staff, and students
-          to help provide a student perspective on necessary changes to create
-          an inclusive campus. As part of the LGBT+ Student Network in 2019, I
-          was selected to attend the NUS LGBT+ Conference, where we debated and
-          voted on policy changes and set the agenda of the NUS on LGBT+ issues
-          for the year to come.
-        </Typography>
-        <Typography component="h3" variant="h6">
-          LGBTQ+ Committee Trans and Non-binary Welfare Officer
-        </Typography>
-        <Typography paragraph>
-          Be a point of contact for students struggling with issues around the
-          university caused by identifying as trans or non-binary. Liaise with
-          the university and external organizations for additional support and
-          facilitation of student needs. Lead on campus activities and help to
-          organize external events.
-        </Typography>
-        <Typography component="h3" variant="h6">
-          Hudd Drama Vice President
-        </Typography>
-        <Typography paragraph>
-          Facilitate the running of the society for the president by organising
-          events, liaising with other committee members to get progress updates
-          on projects, and with the student body for information on the wishes
-          of our members. Assist in running sessions and activities, leading
-          groups of between five and twenty students in one off exercises as
-          well as longer projects.
-        </Typography>
-        <Typography component="h3" variant="h6">
-          Mixed Sports Society Founder and President
-        </Typography>
-        <Typography paragraph>
-          Responsibilities include managing the budget, locating and booking
-          spaces on a weekly basis, sourcing equipment for activities, and
-          engaging with society members to ensure the sports played are
-          appropriate and any necessary adjustments are made for those with
-          additional needs.
-        </Typography>
-        <Typography component="h3" variant="h6">
-          Student Representative
-        </Typography>
-        <Typography paragraph>
-          Meet with and gain understanding of the issues and needs of students
-          on my course, and relay them to faculty through one on one meetings,
-          course committee meetings, and student panel.
+          Agile, Kanban, CI/CD, TDD, requirement analysis
         </Typography>
       </Box>
     </Box>

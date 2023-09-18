@@ -1,6 +1,6 @@
 import { mdiGitlab } from "@mdi/js";
-import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
-import { Box, Typography, SvgIcon } from "@mui/material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
+import { Box, SvgIcon, Typography } from "@mui/material";
 import type { ReactElement, ReactNode } from "react";
 import IconLink from "../IconLink";
 
@@ -12,12 +12,6 @@ interface ILink {
 }
 
 export const links: ILink[] = [
-  {
-    name: "Twitter",
-    label: "@im_aspen",
-    href: "https://twitter.com/im_aspen",
-    children: <Twitter />,
-  },
   {
     name: "LinkedIn",
     label: "Aspen Thompson",
