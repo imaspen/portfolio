@@ -46,14 +46,14 @@ export const Projects: IProject[] = [
     ],
   },
   {
-    id: "overlord",
-    name: "Overlord",
+    id: "beacon",
+    name: "Beacon",
     headerImage: OverlordImage,
     headerPosition: "top center",
     shortDescription:
-      "The administrator portal for my current employer, Beacon.",
+      "At Beacon, I lead the development of our internal administrator portal, Overlord.",
     longDescription:
-      "Written using a mix of JavaScript and TypeScript, Overlord is a modern React app with a quick development cycle built using MUI.\n\nNo code or demo is provided due to the code being proprietary",
+      "Written using a mix of JavaScript and TypeScript, Overlord is a modern React app built with a quick development cycle built using MUI.\n\nNo code or demo is provided due to the code being proprietary",
     carouselEntries: [],
   },
   Cuckoo,
