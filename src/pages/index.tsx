@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           }}
         >
           <Typography component="h3" variant="h6" gutterBottom>
-            Top Projects
+            Top Work
           </Typography>
           <Box
             sx={(theme: Theme) => ({
@@ -109,9 +109,8 @@ const Home: NextPage = () => {
             relocate for the right role.
           </Typography>
           <Typography paragraph gutterBottom>
-            Although I am profficient in a multitude of languages, from the
-            likes of TypeScript through to C++ (full list available in{" "}
-            <Link href="/cv">my CV</Link>), the specific language has never been
+            Although I am proficient in a multitude of languages, from the likes
+            of TypeScript through to C++, the specific language has never been
             my main concern. I&rsquo;m much more interested in the type of
             project.
           </Typography>
@@ -119,9 +118,9 @@ const Home: NextPage = () => {
             Whilst web development has been my primary interest for much of my
             development history, like many developers my age, I actually got
             started using Java to create Minecraft mods. Since then I have kept
-            my passion for games, and soon will be graduating from the
-            University of Huddersfield with a BSc (Hons) in Computer Science
-            with Games Programming.
+            my passion for games, graduating from the University of Huddersfield
+            with a BSc (Hons) in Computer Science with Games Programming, 1st
+            Class.
           </Typography>
           <Typography paragraph gutterBottom>
             I&rsquo;m open to roles in both the web development and gaming

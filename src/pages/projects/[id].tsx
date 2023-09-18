@@ -74,7 +74,7 @@ function Project({ project }: IProjectProps): ReactElement {
             src={project.headerImage}
             alt={`${project.name} Header`}
             layout="fill"
-            objectFit="cover"
+            objectFit={project.headerFit ?? "cover"}
             objectPosition={project.headerPosition ?? "center center"}
           />
         </Box>

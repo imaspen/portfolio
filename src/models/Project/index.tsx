@@ -1,13 +1,11 @@
 import { ImageProps } from "next/image";
-import AocImage from "../../../public/img/aoc.png";
-import PortfolioImage from "../../../public/img/portfolio.png";
 import OverlordImage from "../../../public/img/overlord.png";
+import PostOfficeImage from "../../../public/img/pol.svg";
+import PortfolioImage from "../../../public/img/portfolio.png";
 import { ICarouselEntry } from "../../components/Carousel";
-import LethalDeal from "./LethalDeal";
 import Cuckoo from "./Cuckoo";
-import { ReactNode } from "react";
-import { GitHub } from "@mui/icons-material";
 import GentlemansJourney from "./GentlemansJourney";
+import LethalDeal from "./LethalDeal";
 
 export interface IProjectLink {
   href: string;
@@ -21,6 +19,7 @@ export default interface IProject {
   name: string;
   headerImage: StaticImageData;
   headerPosition?: ImageProps["objectPosition"];
+  headerFit?: ImageProps["objectFit"];
   shortDescription: string;
   longDescription?: string;
   carouselEntries: ICarouselEntry[];
@@ -28,7 +27,29 @@ export default interface IProject {
 }
 
 export const Projects: IProject[] = [
-  LethalDeal,
+  {
+    id: "pol",
+    name: "Post Office",
+    headerImage: PostOfficeImage,
+    headerPosition: "center center",
+    headerFit: "contain",
+    shortDescription:
+      "At Post Office, I have been part of the team working on a major business transformation project.",
+    longDescription:
+      "Working at Post Office has seen me take a role in developing the software for the Post Office’s next generation of counter terminals, using React Native targeting Android and web.\n\nI have lead the improvements to our testing, build, CI, and CD workflows, seeing build, run, and test times all dramatically improved during my tenure.",
+    carouselEntries: [],
+  },
+  {
+    id: "beacon",
+    name: "Beacon",
+    headerImage: OverlordImage,
+    headerPosition: "top center",
+    shortDescription:
+      "At Beacon, I led the development of the internal administrator portal, Overlord.",
+    longDescription:
+      "Written using a mix of JavaScript and TypeScript, Overlord was a modern React app built with an agile development cycle built using MUI.",
+    carouselEntries: [],
+  },
   {
     id: "portfolio",
     name: "Portfolio",
@@ -45,55 +66,12 @@ export const Projects: IProject[] = [
       },
     ],
   },
-  {
-    id: "beacon",
-    name: "Beacon",
-    headerImage: OverlordImage,
-    headerPosition: "top center",
-    shortDescription:
-      "At Beacon, I lead the development of our internal administrator portal, Overlord.",
-    longDescription:
-      "Written using a mix of JavaScript and TypeScript, Overlord is a modern React app built with a quick development cycle built using MUI.\n\nNo code or demo is provided due to the code being proprietary",
-    carouselEntries: [],
-  },
+  LethalDeal,
   Cuckoo,
   GentlemansJourney,
-  {
-    id: "aoc",
-    name: "Advent of Code",
-    headerImage: AocImage,
-    headerPosition: "bottom center",
-    shortDescription:
-      "A yearly set of Christmas themed coding challenges, allowing to test my skills in a number of languages.",
-    longDescription:
-      "I completed both 2020 and 2021 using modern C++, whilst 2018 was completed in Python.\n\nUnfortunately, I didn't finish in 2019, which I started in Haskell, due to time pressures at University, but I hope to go back and complete it after my graduation, as well as the earlier years I’ve yet to complete.",
-    carouselEntries: [],
-    projectLinks: [
-      {
-        href: "https://github.com/imaspen/aoc-2018-python",
-        label: "2018 Repo",
-        icon: "github",
-      },
-      {
-        href: "https://github.com/imaspen/aoc-2019-haskell",
-        label: "2019 Repo",
-        icon: "github",
-      },
-      {
-        href: "https://github.com/imaspen/aoc-2020-cpp",
-        label: "2020 Repo",
-        icon: "github",
-      },
-      {
-        href: "https://github.com/imaspen/aoc-2021-cpp",
-        label: "2021 Repo",
-        icon: "github",
-      },
-    ],
-  },
 ];
 
-const FavoriteProjectIds = ["lethal-deal", "cuckoo", "portfolio", "overlord"];
+const FavoriteProjectIds = ["pol", "beacon", "lethal-deal", "cuckoo"];
 
 export const FavoriteProjects: IProject[] = FavoriteProjectIds.reduce(
   (acc: IProject[], favId: string) => {
