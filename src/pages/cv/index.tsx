@@ -71,15 +71,14 @@ const Home: NextPage = () => {
           Web Developer, Beaconsoft Ltd, 2020 - 2022
         </Typography>
         <Typography component="h3" variant="h6">
-          Apprentice Full Stack Web Developer, SNT Group, October 2015 - April
-          2016
+          Apprentice Full Stack Web Developer, SNT Group, 2015 - 2016
         </Typography>
         <Divider sx={{ marginY: 2 }} />
         <Typography component="h2" variant="h5" align="center" gutterBottom>
           Education
         </Typography>
         <Typography component="h3" variant="h6">
-          University of Huddersfield, 2018-2022
+          University of Huddersfield, 2018 - 2022
         </Typography>
         <Typography>
           Studying Computer Science with Games Programming, BSc (Hons), 1st
@@ -89,11 +88,11 @@ const Home: NextPage = () => {
           Course Best Student Award, Winner
         </Typography>
         <Typography component="h3" variant="h6">
-          The Open University, 2017-2018
+          The Open University, 2017 - 2018
         </Typography>
         <Typography marginBottom={2}>Computing and IT, CertHE</Typography>
         <Typography component="h3" variant="h6">
-          Heckmondwike Grammar School, 2009-2014
+          Heckmondwike Grammar School, 2009 - 2014
         </Typography>
         <Typography>13 GCSEs at A* to C</Typography>
         <Typography>A* Mathematics, A English Language</Typography>
