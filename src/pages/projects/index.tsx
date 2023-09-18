@@ -19,7 +19,7 @@ function Projects(): ReactElement {
       }}
     >
       <Head>
-        <title>I&rsquo;m Aspen - Projects</title>
+        <title>I&rsquo;m Aspen - Past Work</title>
       </Head>
       <Box>
         <Typography
@@ -30,7 +30,7 @@ function Projects(): ReactElement {
           Past Work
         </Typography>
         <Typography align="center" component="h2" variant="h5" maxWidth="lg">
-          A selection of my favorite projects.
+          A selection of my previous work.
         </Typography>
       </Box>
       <Box
